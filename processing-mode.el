@@ -1,4 +1,4 @@
-;; processing-mode.el
+;;; processing-mode.el --- major mode for processing language
 
 ;; Processing.org language based on Java mode. Adds keyword
 ;; highlighting for all recognized Processing language functions.
