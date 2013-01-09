@@ -1,4 +1,7 @@
 This fork contains my fixes to bring processing mode up-to-date with new versions of processing and YASnippet.
+
+Make sure that the java-processing executable is on your path. On OSX, install it through the Processing app by going to Tools->Install "processing-java".
+
 Information from the original readme is below:
 
 -
