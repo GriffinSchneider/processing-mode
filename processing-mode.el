@@ -118,16 +118,8 @@ When ``cmd'' is set to \"export-application\", the ``platform''
 must be set to one of \"windows\", \"macosx\", or \"linux\". If
 no platform is selected, the default platform that Emacs is
 running on will be selected."
-  (concat (file-name-as-directory processing-location)
-	  "java/bin/java -classpath \""
-	  (apply 'make-java-classpath
-		 (mapcar (lambda (x) (expand-file-name (concat processing-location x)))
-			 '("java/lib/rt.jar"
-			   "java/lib/tools.jar"
-			   "lib/antlr.jar" "lib/core.jar"
-			   "lib/ecj.jar" "lib/jna.jar"
-			   "lib/pde.jar")))
-	  "\" processing.app.Commander"
+  (concat "processing-java"
+          " --force"
 	  " --sketch=\"" (expand-file-name sketch-dir)
 	  "\" --output=\"" (expand-file-name output-dir)
 	  ;; Remove this comment when Processing implements the --preferences=??? command-line option.
