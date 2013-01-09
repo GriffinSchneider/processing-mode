@@ -264,9 +264,7 @@ on."
 	 ("fill" "fill(${gray_or_color_or_hex});" "fill .." nil)
 	 ("fill.ca" "fill(${gray_or_color_or_hex}, ${alpha});" "fill .. alpha" nil)
 	 ("fill.rgb" "fill(${red}, ${green}, ${blue});" "fill RGB" nil)
-	 ("fill.rgba" "fill(${red}, ${green}, ${blue}, ${alpha});" "fill RGBA" nil)
-	 )
-       'java-mode)
+	 ("fill.rgba" "fill(${red}, ${green}, ${blue}, ${alpha});" "fill RGBA" nil)))
       t)
   (progn
     (message "processing-mode: YASnippets not installed. Not defining any snippets.")
